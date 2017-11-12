@@ -16,7 +16,9 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="526.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hva.fys.mercury.FXMLController">
+<!--import controllers-->
+
+<AnchorPane id="AnchorPane" fx:id="anchorWorkSpace" prefHeight="526.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hva.fys.mercury.MenuBarController">
     <stylesheets>
         <URL value="@/styles/menubar.css" />
     </stylesheets>
@@ -46,18 +48,6 @@
                   </VBox>
                   <VBox minWidth="-Infinity" prefHeight="486.0" prefWidth="265.0" GridPane.rowIndex="1">
                      <children>
-                        <Button id="logout" alignment="TOP_LEFT" minWidth="-Infinity" mnemonicParsing="false" onAction="#logOut" prefHeight="46.0" prefWidth="265.0" text="Logout" wrapText="true">
-                           <graphic>
-                              <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../images/logout%20icon.png" />
-                                 </image>
-                              </ImageView>
-                           </graphic>
-                           <effect>
-                              <Glow />
-                           </effect>
-                        </Button>
                         <Button id="dashboardBTN" fx:id="DashboardBTN" alignment="TOP_LEFT" minWidth="-Infinity" mnemonicParsing="false" onAction="#openDashboard" prefHeight="46.0" prefWidth="265.0" text="Dashboard" wrapText="true">
                            <graphic>
                               <ImageView fitHeight="36.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">

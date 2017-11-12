@@ -9,6 +9,7 @@
     -fx-font-weight: BOLD ;
     -fx-text-fill: white;
 }
+
 .button#newFormBTN{
     -fx-color: #54b255; 
     -fx-background-color: #54b255; 
